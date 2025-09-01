@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>初學者</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--上面那行是讓裝置畫面能夠自動適應設定-->
+  <meta name="description" content="第一次做HTML就上手">
+  <!--上面那行是告訴搜尋引擎網站內容-->
+  <meta name="author" content="初學者">
+  <!--上面那行是告訴搜尋引擎網站作者-->
+  <meta name="keywords" content="初學者, HTML">
+  <title>自主學習</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>自主學習</h1>
+    </div>
+  </header>
+
+  <section>
+
+    <br>
+
+    <div class="top-button" id="top">
+      <button type="button" id="HTML">HTML</button>
+      <button type="button" id="CSS">CSS</button>
+      <button type="button" id="JavaScript">JavaScript</button>
+    </div>
+
+    <div class="introduce">
+      <p>這是一個我自主學習時所做的網頁，包含一些我學習時的筆記以及應用</p>
+    </div>
+    
+    <div class="second-title" id="start-HTML">
+      <h2>HTML簡單教學</h2>
+    </div>
+
+    <h2>HTML基本結構</h2>
+
+    <div class="basic-html">
+      <ol>
+        <li>b和 strong 都能顯示粗體，但 strong 更具語義上的重要性</li>
+        <li>ex.<strong>我很興奮</strong></li>
+        <li>p.s.粗體效果也可以透過 CSS 設定</li>
+        <li>em 和 i 都是用來顯示斜體，但 em 代表「強調」的語義</li>
+        <li>ex.<em>我很開心</em></li>
+        <li>!--基本標籤(補充說明)--</li>
+        <li>br 是換行、空標籤(不用加/)</li>
+        <li>hr 是加水平線、空標籤(不用加/)</li>
+      </ol>
+    </div>
+
+    <div class="basic-html-2">
+      <ol>
+        <li>header 頭部</li>
+        <li>section 中間</li>
+        <li>footer 尾部</li>
+        <li>都須包含在body內</li>
+      </ol>
+    </div>
+
+    <hr>
+
+    <h2>清單</h2>
+
+    <div class="list-1">
+      <ul>
+        <li>ol 是順序+數字</li>
+        <li>ul 是無順序的項目清單</li>
+        <li>每個項目前後都要加 li</li>
+        <li><strong>li 可以包含文字、行內元素、區塊級元素(表格)，甚至是另一個列表</strong></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <h2>連結分享</h2>
+
+    <div class="list-2">
+      <ol>
+        <li><a href="#">關注我學更多</a></li>
+        <li>a 標籤用於建立超連結，+ href 屬性填入目標網址</li>
+        <li>a 標籤內的文字，就是連結的顯示名稱</li>
+      </ol>
+    </div>
+
+    <hr>
+
+    <h2>圖片</h2>
+
+    <div class="text">
+      <ul>
+        <li>img 是圖片+src</li>
+        <li>圖片 width=寬；height=高</li>
+        <li>等比例只要輸入一個</li>
+        <li>img 是空標籤(不用加/)</li>
+      </ul>
+    </div>
+
+    <div>
+      <img src="https://img.technews.tw/wp-content/uploads/2025/06/02094446/54560233858_53dda4a7cd_k-768x512.jpg">
+    </div>
+
+    <hr>
+
+    <h2>影片</h2>
+
+    <div class="text">
+      <ul>
+        <li>video 是影片+src</li>
+        <li>分享，嵌入(不能直接複製網址)</li>
+        <li>和圖片一樣可控制寬高</li>
+      </ul>
+    </div>
+
+    <div>
+      <iframe src="https://www.youtube.com/embed/CLUPkcLQm64?si=aktXplgGu_C62wYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <hr>
+
+    <h2>表格</h2>
+
+    <div>
+      <ol>
+        <li>table 是表格，格式如下</li>
+        <li>caption 是表格命名</li>
+        <li>thead 包住 頭(表格標題列)</li>
+        <li>tbody 包住 主要資料列</li>
+        <li>tfoot 包住 腳(總結、統計等)</li>
+        <li>tr 是表格的「列」(橫排)，用來包住 th 和 td</li>
+        <li>th 是表格的標題列 (加粗)</li>
+        <li>td 是內容</li>
+        <li>一樣可控制寬高，如圖片</li>
+        <li>特殊
+          <ol class="table">
+            <li>colspan (Column Span)
+              <ul>
+                <li>讓一個儲存格能夠水平橫跨多個欄位</li>
+                <li>格式：+　＝"數字"</li>
+                <li>直接加在 th 或 td</li>
+              </ul>
+            </li>
+            　<li>rowspan
+              　 <ul>
+                <li>讓一個儲存格能夠垂直橫跨多個欄位</li>
+                <li>格式：如同colspan</li>
+                <li><strong>注意：下面那一列就不能再寫多的</strong></li>
+              </ul>
+              　</li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+
+    <div>
+      <p><strong>ex.</strong></p>
+    </div>
+
+    <div class="table-time">
+      <table>
+        <caption>花費時間</caption>
+        <thead>
+          <tr>
+            <th>日期</th>
+            <th>時間</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5/20</td>
+            <td>18min</td>
+          </tr>
+          <tr>
+            <td>6/02</td>
+            <td>20min</td>
+          </tr>
+          <tr>
+            <td>6/03</td>
+            <td>30min</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="slide">
+      <p><em>♡可以用滑鼠在表格上滑滑看♡</em></p>
+    </div>
+
+    <hr>
+
+    <h2>重要！</h2>
+
+    <div class="important">
+      <ul>
+        <li>div 是區塊級容器，會自動換行</li>
+        <li>span 是容器，不會直接換行(少用)</li>
+        <li>兩者意義皆是可快速對內容做CSS設計</li>
+      </ul>
+      <ul>
+        <li>"&+copy+;" 是版權符號</li>
+        <li>"&+reg+;" 是註冊商標</li>
+        <li>"&+nbsp+;"是空格</li>
+        <li>需加在"<>與<>"之間</li>
+      </ul>
+    </div>
+    
+    <div class="slide">
+      <p><em>♡可以用滑鼠在表格上滑滑看♡</em></p>
+    </div>
+
+    <hr>
+    
+    <h2>label</h2>
+
+    <div class="label">
+      <ul>
+        <li>功能：為表單控制項提供標籤</li>
+        <li>一般加上 for ="值"</li>
+        <li>常搭配 input、textarea 等表單元素一起使用</li>
+        <li><strong>for 屬性的值必須與表單控制項的 id 屬性值完全相同</strong></li>
+        <li><strong>優點</strong>
+          <ol>
+            <li><strong>提升使用者體驗：</strong>讓使用者不需要精準點擊小小的輸入框，<em>只需要點擊在label 內設定的文字，就能自動跳轉到框框內</em>。讓使用者不需要精準點擊小小的輸入框，特別是在手機等小螢幕裝置上，操作會更方便</li>
+            <li><strong>無障礙設計：</strong>當螢幕閱讀器讀到 label 時，它會清楚地告訴用戶「這是使用者名稱的輸入框」，這對視障人士來說非常重要</li>
+          </ol></li>
+      </ul>
+    </div>
+    
+    <hr>
+
+    <h2>button</h2>
+
+    <div class="table-button">
+      <ol>
+        <li>功能：建立可點擊按鈕的元素</li>
+        <li>常搭配 type=
+          <table>
+            <thead>
+              <tr>
+                <th>屬性值</th>
+                <th>功能</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>"button"</td>
+                <td>沒有預設行為的普通按鈕</td>
+              </tr>
+              <tr>
+                <td>"submit"</td>
+                <td>提交表單資料的按鈕(預設)</td>
+              </tr>
+              <tr>
+                <td>"reset"</td>
+                <td>重設表單欄位</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+      </ol>
+    </div>
+
+    <hr>
+    
+    <div class="table-input">
+      <table>
+        <caption>input 介紹</caption>
+        <thead>
+          <tr>
+            <th>input type=___</th>
+            <th>功能</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>"text"</td>
+            <td>框框</td>
+          </tr>
+          <tr>
+            <td>"password"</td>
+            <td>自動遮住打出的字</td>
+          </tr>
+          <tr>
+            <td>"date"</td>
+            <td>日期</td>
+          </tr>
+          <tr>
+            <td>"range"</td>
+            <td>拉移長條</td>
+          </tr>
+          <tr>
+            <td>"file"</td>
+            <td>上傳檔案</td>
+          </tr>
+          <tr>
+            <td>"checkbox"</td>
+            <td>框內選擇打勾</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="text">
+      <ul>
+        <li>input 輸入+type=""</li>
+        <li>placeholder= 是提示，加在input後</li>
+      </ul>
+    </div>
+
+    <br>
+
+    <div>
+      <label for="username">名稱：</label>
+      <input type="text" placeholder="請輸入使用者名稱" id="username" />
+
+      <br>
+
+      <p><button type="button">按我</button> 不會有事發生</p>
+
+      <br>
+
+      <label for="account">帳號：</label>
+      <input type="text" placeholder="請輸入帳號" id="account" />
+
+      <br>
+      <br>
+
+      <label for="password">密碼：</label>
+      <input type="password" placeholder="請輸入密碼" id="password" />
+
+      <br>
+      <br>
+
+      <input type="date" />
+
+      <br>
+      <br>
+
+      <input type="range" />
+
+      <br>
+      <br>
+
+      <input type="file" />
+
+      <br>
+      <br>
+
+      <input type="checkbox" />
+    </div>
+
+    <hr>
+
+    <div class="text">
+      <ul>
+        <li>textarea 是方框(可伸縮)，直接像br</li>
+      </ul>
+      <textarea>你好</textarea>
+    </div>
+
+    <div class="top-1">
+      <label>Back to Top</label>
+    </div>
+
+    <hr>
+
+    <div class="second-title" id="start-CSS">
+      <h2>CSS簡單教學</h2>
+    </div>
+
+    <br>
+
+    <span class="cool">
+    
+    <h2>CSS基本結構</h2>
+
+    <div class="table-basic-css">
+      <ul>
+        <li>在HTML結構內設定div的名稱 ex. div class="名稱" 或是 加id ex. h2 id="名稱"</li>
+        <li>比較
+          <table>
+            <thead>
+              <tr>
+                <th>名字</th>
+                <th>功能</th>
+                <th>比喻</th>
+                <th>性質</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>div</td>
+                <td>區塊容器，用來包住其他內容，方便排版</td>
+                <td>一個盒子</td>
+                <td>標籤(Tag)</td>
+              </tr>
+              <tr>
+                <td>id</td>
+                <td>唯一名字（全頁只能有一次）</td>
+                <td>盒子的身分證（唯一的）</td>
+                <td>屬性(Attributes)</td>
+              </tr>
+              <tr>
+                <td>class</td>
+                <td>可重複的名字（可以很多元素用同一個 class）</td>
+                <td>盒子的衣服款式（很多人可以穿同一款）</td>
+                <td>屬性(Attributes)</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>在CSS結構內叫出名稱 ex. .名稱{} 或 直接 h1-6等等(不須.){}</li>
+        <li>內部每一個的最後面需要+ ;</li>
+        <li>/* 補充說明 */</li>
+      </ul>
+    </div>
+      
+    <hr class="hr">  
+
+    <h3>:root 使用方式+介紹</h3>
+
+    <div>
+      <ol>
+        <li>:root 是設定基本顏色，方便一次性全部修改</li>
+        <li>格式： --名字-color:色號 或是 --名字-color:rgb的數字 </li>
+        <li>之後需要，叫出var(--名字-color) 或是 rgb(var(--名字-color)))</li>
+        <li><a href="https://www.w3schools.com/colors/colors_names.asp">CSS內建的顏色</a></li>
+      </ol>
+
+      <p><em>p.s.如果色號需要加透明度➤ var(--名字-color),1-0)</em></p>
+      <p><em>p.s.如果rgb需要加透明度➤ rgba(var(--名字-color),1-0)</em></p>
+      <p><em>rgba的 1(不透明)-0(透明)</em></p>
+    </div>
+      
+    <hr class="hr">    
+
+    <h3>% 使用方式+介紹</h3>
+
+    <div class="table-percent">
+      <ol>
+        <li>定義：是一種相對單位，是某個東西的比例</li>
+        <li>優點：可以控制元素的間距，並在不同寬度的螢幕上保持一致的比例</li>
+        <br>
+        <br>
+        <li>
+          <table>
+            <thead>
+              <tr>
+                <th>常見應用</th>
+                <th>計算基準</th>
+                <th>注意</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>元素尺寸 (width, height)</td>
+                <td>相對於父容器的尺寸</td>
+                <td>父容器必須有明確的尺寸(寬度或高度)</td>
+              </tr>
+              <tr>
+                <td>內外邊距 (padding, margin)</td>
+                <td>水平或垂直，都是相對於父容器的寬度來計算的</td>
+              </tr>
+              <tr>
+                <td>圓角 (border-radius)</td>
+                <td>相對於元素本身的尺寸</td>
+                <td>對一個正方形設定 圓角為50% 或 圓角為100% 時，都會形成一個完美的圓形</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <br>
+        <br>
+        <li>特殊情況：不需要父容器尺寸的應用
+          <ul>
+            <li><strong>Viewport 單位</strong>
+              <p>vw (Viewport Width) 和 vh (Viewport Height) 是相對於瀏覽器視窗的尺寸</p>
+            </li>
+            <li><strong>已定位元素 (position: absolute)</strong>
+              <p>相對於最近的、已定位的父元素<br>(可透過 top: 0; right: 0; bottom: 0; left: 0; 來讓一個絕對定位的子元素填滿父容器)</p>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+      
+    <hr class="hr">    
+
+    <h3>px (pixel) 使用方式+介紹</h3>
+
+    <div class="px">
+      <ol>
+        <li>這個單位在 CSS 中就是指一個抽象的「像素」單位</li>
+        <li>可以用於設定幾乎所有的 CSS 屬性</li>
+        <li>優點
+          <ul>
+            <li>直觀且精確：px 的大小是固定的</li>
+            <li>易於計算</li>
+          </ul>
+        </li>
+        <li>缺點
+          <ul>
+            <li>響應性差</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <hr class="hr">    
+      
+    <h3>@media 使用方式+介紹</h3>
+
+    <div class="media">
+      <ul>
+        <li>定義：針對不同的裝置或條件，套用不同的樣式</li>
+        <li>格式：媒體類型 and (條件) { <br>/* 放想應用的 CSS 樣式 (加 ; )*/<br>}
+          <ol>
+            <li><strong>媒體類型(Media Type)</strong>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>all</td>
+                    <td>所有裝置(預設值)</td>
+                  </tr>
+                  <tr>
+                    <td>screen</td>
+                    <td>電腦螢幕、平板和手機等</td>
+                  </tr>
+                  <tr>
+                    <td>print</td>
+                    <td>印表機</td>
+                  </tr>
+                  <tr>
+                    <td>speech</td>
+                    <td>語音合成器(ex. Google 助理)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li><strong>條件(Media Feature)</strong>
+              <table class="media-2">
+                <tbody>
+                  <tr>
+                    <td>min-width(height):</td>
+                    <td>螢幕寬度(高度)<strong>大於或等於</strong>指定值時</td>
+                  </tr>
+                  <tr>
+                    <td>max-width(height):</td>
+                    <td>螢幕寬度(高度)<strong>小於或等於</strong>指定值時</td>
+                  </tr>
+                  <tr>
+                    <td>orientation:</td>
+                    <td>裝置方向
+                      <ul>
+                        <li>portrait(直向)</li>
+                        <li>landscape(橫向)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>prefers-color-scheme:</td>
+                    <td>使用者偏好的顏色模式
+                      <ul>
+                        <li>light</li>
+                        <li>dark</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              注意敘述的條件
+            </li>
+          </ol>
+        </li>
+
+      </ul>
+    </div>
+      
+    <hr>  
+    
+      
+    <div class="container">
+      <div class="table-color-and-text">
+        <table>
+          <caption>顏色與文字</caption>
+          <thead>
+            <tr>
+              <th>屬性值</th>
+              <th>功能</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>color:</td>
+              <td>文字顏色</td>
+            </tr>
+            <tr>
+              <td>font-size:</td>
+              <td>字體大小 (數字+px)</td>
+            </tr>
+            <tr>
+              <td>font-weight:</td>
+              <td>字體粗細 (100-900)
+                <ul>
+                  <li>100 文字最細 (thin)</li>
+                  <li>400 預設值 (normal)</li>
+                  <li>700 粗體 (bold)</li>
+                  <li>900 最粗 (black 或 heavy)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>font-family:</td>
+              <td>字體類型 ("微軟正黑體",sans-serif)(第一順位,第二順位)</td>
+            </tr>
+            <tr>
+              <td>text-align:</td>
+              <td>文字對齊 (center置中,left左)</td>
+            </tr>
+            <tr>
+              <td>text-decoration:</td>
+              <td>添加裝飾線條 (+ 底線位置 線型 顏色)
+
+                 <ul>
+                  <li>none: 沒有任何裝飾線</li>
+                  <li>underline: 底線</li>
+                  <li>overline: 上線</li>
+                  <li>line-through: 刪除線</li>
+                 </ul>
+             </td>
+           </tr>
+            <tr>
+              <td>line-height:</td>
+              <td>行距 (數字)(如果是有順序，就要加在順序的 .名稱 li)</td>
+            </tr>
+            <tr>
+              <td>background</td>
+              <td>背景 (縮寫屬性) (不需要的話是none)</td>
+            </tr>
+              <tr>
+               <td>background-color:</td>
+               <td>背景顏色 (不需要的話是transparent)</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+      
+    <div>
+      <p><em>p.s.中文字體（如「標楷體」或「仿宋體」）需加上引號""，而 sans-serif (無襯線體)則不需要</em></p>
+    </div>
+      
+    <div class="slide">
+      <p><em>♡可以用滑鼠在表格上滑滑看♡</em></p>
+    </div>  
+      
+    <div class="table-line">
+      <table>
+        <caption>線型介紹</caption>
+        <thead>
+          <tr>
+            <th>屬性值</th>
+            <th>功能</th>
+            <th>用在text-decoration</th>
+            <th>用在border</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>solid</td>
+            <td>實線</td>
+            <td>☑</td>
+            <td>☑</td>
+          </tr>
+          <tr>
+            <td>double</td>
+            <td>雙線</td>
+            <td></td>
+            <td>☑</td>
+          </tr>
+          <tr>
+            <td>dotted</td>
+            <td>點線</td>
+            <td>☑</td>
+            <td>☑</td>
+          </tr>
+          <tr>
+            <td>dashed</td>
+            <td>虛線</td>
+            <td>☑</td>
+            <td>☑</td>
+          </tr>
+          <tr>
+            <td>wavy</td>
+            <td>波浪線</td>
+            <td>☑</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>groove</td>
+            <td>內凹線(似相框)</td>
+            <td></td>
+            <td>☑</td>
+          </tr>
+          <tr>
+            <td>ridge</td>
+            <td>內凸線</td>
+            <td></td>
+            <td>☑</td>
+          </tr>
+          <tr>
+            <td>inset</td>
+            <td>內嵌線</td>
+            <td></td>
+            <td>☑</td>
+          </tr>
+          <tr>
+            <td>outset</td>
+            <td>外凸線</td>
+            <td></td>
+            <td>☑</td>
+          </tr>
+          <tr>
+            <td>none / hidden</td>
+            <td>移除或隱藏線條</td>
+            <td>☑</td>
+            <td>☑</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>   
+      
+    <hr>  
+
+    <div class="table-background">
+      <table>
+        <caption>背景圖片設置</caption>
+        <thead>
+          <tr>
+            <th>屬性值</th>
+            <th>功能</th>
+            <th>搭配</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>background-image:</td>
+            <td>背景圖片</td>
+            <td>url(圖片網址)</td>
+          </tr>
+          <tr>
+            <td>background-repeat:</td>
+            <td>控制圖片是否重複</td>
+            <td>repeat（預設）、no-repeat、repeat-x、repeat-y</td>
+          </tr>
+          <tr>
+            <td>background-size:</td>
+            <td>調整圖片大小</td>
+            <td>auto（預設）、cover（填滿）、contain（完整顯示)</td>
+          </tr>
+          <tr>
+            <td>background-position:</td>
+            <td>控制圖片位置</td>
+            <td>top left、center、bottom right</td>
+          </tr>
+          <tr>
+            <td>background-attachment:</td>
+            <td>控制圖片是否跟著滾動</td>
+            <td>
+              <ul>
+                <li>scroll(預設)(固定在元素本身，並且會隨著整個網頁一起滾動)</li>
+                <li>fixed(固定不動)</li>
+                <li>local(隨著元素內的內容一起滾動)</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>漸變圖片、背景(linear-gradient)</h2>
+
+    <div class="table-linear-gradient">
+      <ul>
+        <li>功能：建立漸變背景。將它想成是一種特殊的圖片，這張圖片不是從檔案載入的，而是由瀏覽器根據你的設定動態生成的，可以從一種顏色平滑地過渡到另一種顏色</li>
+        <li>一般格式：(方向, 顏色1, 顏色2)</li>
+        <li>加在background後</li>
+        <li>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>關鍵字</th>
+                <th>角度</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>向上</td>
+                <td>to top</td>
+                <td>0deg</td>
+              </tr>
+              <tr>
+                <td>向下</td>
+                <td>to bottom</td>
+                <td>180deg</td>
+              </tr>
+              <tr>
+                <td>向右</td>
+                <td>to right</td>
+                <td>90deg</td>
+              </tr>
+              <tr>
+                <td>向左</td>
+                <td>to left</td>
+                <td>-90deg</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>半透明圖層，兩個顏色就ok</li>
+        <li>一個顏色後加 % 漸變；全部顏色後加 % 硬邊(共100 %)</li>
+        <ul class="linear-gradient-2">
+          <li>硬邊意思：在漸變中，顏色變化不是平滑過渡的，而是突然從一種顏色跳變到另一種顏色，中間沒有模糊或漸變的過程。</li>
+          <li>範例：linear-gradient(方向, 顏色A 25%, 顏色B 25%, 顏色B 75%, 顏色A 75%)；結果：0% 到 25% 都是顏色A，25% 到 75% 都是顏色B，75% 到 100% 都是顏色A </li>
+        </ul>
+        <li><em>p.s.顏色可以很多個</em></li>
+      </ul>
+    </div>
+      
+    <hr>  
+
+    <div class="table-layout-and-block">
+      <table>
+        <caption>版面與區塊</caption>
+        <thead>
+          <tr>
+            <th>屬性值</th>
+            <th>功能</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>padding:</td>
+            <td>內距(內部空隙+px)</td>
+          </tr>
+          <tr>
+            <td>margin:</td>
+            <td>外距(與其他區塊的距離+px)<em>(可直接加 上.下.左.右)</em></td>
+          </tr>
+          <tr>
+            <td>border:</td>
+            <td>邊框(+ 粗細 線型 顏色)<em>(可直接加 上.下.左.右)</em></td>
+          </tr>
+          <tr>
+            <td>border-radius:</td>
+            <td>圓角邊框</td>
+          </tr>
+          <tr>
+            <td>text-shadow:</td>
+            <td>文字陰影([水平偏移] [垂直偏移] [模糊半徑] [擴散半徑] [顏色] [內陰影(選填)])</td>
+          </tr>
+          <tr>
+            <td>box-shadow:</td>
+            <td>容器陰影([水平偏移] [垂直偏移] [模糊半徑] [擴散半徑] [顏色] [內陰影(選填)])</td>
+          </tr>
+          <tr>
+            <td>width:</td>
+            <td>寬度(預設auto)</td>
+          </tr>
+          <tr>
+            <td>height:</td>
+            <td>高度(預設auto)</td>
+          </tr>
+          <tr>
+            <td>max-width:</td>
+            <td>最大寬度(常搭配width)(預設100%)</td>
+          </tr>
+          <tr>
+            <td>max-height:</td>
+            <td>最大高度(常搭配height)(預設100%)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="slide">
+      <p><em>♡可以用滑鼠在表格上滑滑看♡</em></p>
+    </div>
+
+    <div>
+      <p><em>p.s. 上.下.左.右→ top.bottom.left.right</em></p>
+    </div>
+
+    <h2>"圓角邊框"介紹</h2>
+
+    <div>
+      <ul>
+        <li>1數字 全部一樣</li>
+        <li>2數字 第一個值套用到 左上&右下，第二個值套用到 右上&左下</li>
+        <li>4數字 左上、右上、右下、左下</li>
+        <li>加上50% 會是圓</li>
+      </ul>
+    </div>
+
+    <div class="beauty">
+      <h2>"陰影"介紹</h2>
+      <br>
+      <br>
+      <h3>水平偏移量（必填) </h3>
+      <p>→陰影相對於元素水平方向的距離，正值往右，負值往左</p>
+      <h3>垂直偏移量（必填）</h3>
+      <p>→陰影相對於元素垂直方向的距離，正值往下，負值往上</p>
+      <h3>模糊半徑（選填）</h3>
+      <p>→陰影的模糊程度，數字越大陰影越柔和擴散。預設為0（沒有模糊）</p>
+      <h3>擴散半徑（選填）</h3>
+      <p>→陰影大小的擴散範圍，正值會讓陰影變大，負值會縮小陰影</p>
+      <h3>顏色（選填，但建議加）</h3>
+      <br>
+      <br>
+      <h3>內陰影關鍵字 inset（選填）</h3>
+      <p>→如果加上 inset，陰影會變成元素內部的陰影，而非外部</p>
+    </div>
+      
+    <hr>  
+
+    <div class="table-list">
+      <table>
+        <caption>清單項目符號</caption>
+        <thead>
+          <tr>
+            <th colspan="3">list-style-type</th>
+          </tr>
+          <tr>
+            <th>屬性值</th>
+            <th>適用標籤</th>
+            <th>功能</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>disc</td>
+            <td>ul</td>
+            <td>實心圓點（無序清單預設）</td>
+          </tr>
+          <tr>
+            <td>circle</td>
+            <td>ul</td>
+            <td>空心圓點</td>
+          </tr>
+          <tr>
+            <td>square</td>
+            <td>ul</td>
+            <td>方形點</td>
+          </tr>
+          <tr>
+            <td>decimal</td>
+            <td>ol</td>
+            <td>數字編號（有序清單預設) </td>
+          </tr>
+          <tr>
+            <td>decimal-leading-zero</td>
+            <td>ol</td>
+            <td>帶前置零的數字編號</td>
+          </tr>
+          <tr>
+            <td>lower-roman</td>
+            <td>ol</td>
+            <td>小寫羅馬數字</td>
+          </tr>
+          <tr>
+            <td>upper-roman</td>
+            <td>ol</td>
+            <td>大寫羅馬數字</td>
+          </tr>
+          <tr>
+            <td>lower-alpha</td>
+            <td>ol</td>
+            <td>小寫英文字母</td>
+          </tr>
+          <tr>
+            <td>upper-alpha</td>
+            <td>ol</td>
+            <td>大寫英文字母</td>
+          </tr>
+          <tr>
+            <td>none</td>
+            <td>ul.ol</td>
+            <td>無符號（不顯示符號）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="slide">
+      <p><em>♡可以用滑鼠在表格上滑滑看♡</em></p>
+    </div>
+
+    <div class="table-beauty">
+      <table>
+        <caption>常見表格美編</caption>
+        <thead>
+          <tr>
+            <th colspan="5">不限於表格</th>
+          </tr>
+          <tr>
+            <th>屬性值</th>
+            <th>針對表格功能</th>
+            <th>備註</th>
+            <th>範例</th>
+            <th>注意</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>border-collapse:</td>
+            <td>表格邊框的顯示方式</td>
+            <td>:後面加separate（邊框和儲存格分離）或collapse(邊框和儲存格連成一整體)</td>
+            <td></td>
+            <td>一定要加在table上</td>
+          </tr>
+          <tr>
+            <td>border-spacing:</td>
+            <td>控制儲存格之間的水平和垂直間距</td>
+            <td>只有當 border-collapse: separate 時有效</td>
+            <td>border-spacing: 10px 5px (水平10px，垂直5px)</td>
+            <td>一定要加在table上</td>
+          </tr>
+          <tr>
+            <td>border-bottom:</td>
+            <td>水平分隔符號，格式和 border 一樣</td>
+            <td>
+              <ol>
+                <li>每一列→加在th,td(兩個都要)<br></li>
+                <li>特定列→加在指定 tr 的th,td(兩個都要)</li>
+                <li>特定儲存格→加在指定 tr 的td</li>
+              </ol>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>:nth-child()</td>
+            <td>條紋樣式</td>
+            <td>()內偶數→even；()內奇數→odd；()內可以單獨數字；:hover一樣的格式<br>但不能加在 thead.tbody.tfoot上</td>
+            <td>.名稱 td:nth-child(even) {background-color: 顏色}</td>
+            <td>下面會介紹(偽類-1)</td>
+          </tr>
+          <tr>
+            <td>:hover</td>
+            <td>滑鼠懸停時反白顯示</td>
+            <td>前面+ th.td是單格；tr是整列；也可加 thead.tbody.tfoot；最後加{background-color:顏色}</td>
+            <td>.名稱 td:hover {background-color: 顏色}</td>
+            <td>下面會介紹(偽類-2)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <p><em>p.s. : 在最前面代表放在最上面包住其他</em></p>
+      <p><em>p.s. 可以加上:first-child 或:last-child更準確設定CSS</em></p>
+      <p><em>p.s. 可以加上table thead tr th更準確設定CSS</em></p>
+    </div>
+      
+    <hr>  
+
+    <h2>響應式overflow</h2>
+
+    <div class="table-overflow">
+      <ul>
+        <li>overflow</li>
+        <li>overflow-x水平(X 軸)</li>
+        <li>overflow-y垂直(Y 軸)</li>
+        <li><strong>直接加在div(class)上</strong></li>
+        <li>搭配
+          <table>
+            <thead>
+              <tr>
+                <th>屬性值</th>
+                <th>功能</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>visible</td>
+                <td>(預設值)內容超出容器時，會直接顯示出來</td>
+              </tr>
+              <tr>
+                <td>hidden</td>
+                <td>所有超出部分都會被裁剪和隱藏</td>
+              </tr>
+              <tr>
+                <td>scroll</td>
+                <td>永遠顯示水平和垂直捲軸</td>
+              </tr>
+              <tr>
+                <td>auto</td>
+                <td>最常用且最推薦的值，會根據內容是否超出容器來決定是否顯示捲軸</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+      </ul>
+    </div>
+
+    <div class="table-display">
+      <table>
+        <caption>display:搭配</caption>
+        <thead>
+          <tr>
+            <th colspan="5">display功能：用來控制一個 HTML 元素的顯示類型（或稱「盒子模型」）</th>
+          </tr>
+          <tr>
+            <th>屬性值</th>
+            <th>意義</th>
+            <th>特性</th>
+            <th>可以設定尺寸</th>
+            <th>例如</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>block</td>
+            <td>區塊元素</td>
+            <td>獨佔一行</td>
+            <td>❄</td>
+            <td>div、p、h1、ul、li、header、footer</td>
+          </tr>
+          <tr>
+            <td>inline</td>
+            <td>行內元素</td>
+            <td>不佔滿一行：它只會佔據內容所需的空間，不會自動換行</td>
+            <td></td>
+            <td>span、a、strong、em、img</td>
+          </tr>
+          <tr>
+            <td>inline-block</td>
+            <td>行內區塊元素</td>
+            <td>不佔滿一行：它只會佔據內容所需的空間，不會自動換行</td>
+            <td>❄</td>
+            <td>button</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <br>
+
+    <div class="table-display-2">
+      <table>
+        <thead>
+          <tr>
+            <th>屬性值</th>
+            <th>主要用途</th>
+            <th>對齊方式</th>
+            <th>區別</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>flex</td>
+            <td>處理一維（單行或單列）佈局</td>
+            <td>子元素對齊</td>
+            <td>簡單、直觀</td>
+          </tr>
+          <tr>
+            <td>grid</td>
+            <td>處理二維（行和列）佈局</td>
+            <td>整個網格的對齊</td>
+            <td>複雜，需要規劃行與列</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <br>
+
+    <h2>佈局模式-1(flex)</h2>
+
+    <div class="table-flex">
+      <ul>
+        <li>核心概念是父容器(Container)和子項目(Item)
+          <ol>
+            <li>父容器：容器會自動地將它的所有子元素變成彈性項目，並將它們預設排成一條直線(水平方向)</li>
+            <li>子項目：彈性項目會根據父容器的設定自動調整它們的尺寸和位置</li>
+          </ol>
+        </li>
+        <li><strong>justify-content搭配</strong>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">功能：控制子項目在主軸（預設為水平方向）上的對齊和間距</th>
+              </tr>
+              <tr>
+                <th>屬性值</th>
+                <th>功能</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>flex-start</td>
+                <td>所有項目靠左對齊</td>
+              </tr>
+              <tr>
+                <td>flex-end</td>
+                <td>所有項目靠右對齊</td>
+              </tr>
+              <tr>
+                <td>center</td>
+                <td>所有項目置中對齊</td>
+              </tr>
+              <tr>
+                <td>space-between</td>
+                <td>項目之間平均分配空間，兩端沒有間距</td>
+              </tr>
+              <tr>
+                <td>space-around</td>
+                <td>項目之間和兩端都有平均的間距</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li><strong>align-items搭配</strong>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">功能：控制子項目在交叉軸（預設為垂直方向）上的對齊</th>
+              </tr>
+              <tr>
+                <th>屬性值</th>
+                <th>功能</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>flex-start</td>
+                <td>所有項目靠上對齊</td>
+              </tr>
+              <tr>
+                <td>flex-end</td>
+                <td>所有項目靠下對齊</td>
+              </tr>
+              <tr>
+                <td>center</td>
+                <td>所有項目垂直置中</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li><strong>flex-direction搭配</strong>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">功能：改變子項目的排列方向，讓主軸變成垂直或水平</th>
+              </tr>
+              <tr>
+                <th>屬性值</th>
+                <th>功能</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>row</td>
+                <td>預設值，項目水平排列</td>
+              </tr>
+              <tr>
+                <td>column</td>
+                <td>項目垂直排列</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+      </ul>
+    </div>
+
+    <h2>偽類-1(child & type)</h2>
+
+    <div>
+      <ol>
+        <li>考慮的是父元素下的所有子元素
+          <ul>
+            <li class="child-type"><strong>:first-child</strong>
+              <ul>
+                <li>選取父元素下的第一個子元素</li>
+              </ul>
+            </li>
+            <li><strong>:last-child</strong>
+              <ul>
+                <li>選取父元素下的最後一個子元素</li>
+              </ul>
+            </li>
+            <li class="child-type"><strong>:nth-child(n)</strong>
+              <ul>
+                <li>選取第 n 個子元素，n 可以是數字、關鍵字或數學公式</li>
+              </ul>
+            </li>
+            <li><strong>:nth-last-child(n)</strong>
+              <ul>
+                <li>從最後一個元素開始往前算</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li>只會計算相同標籤類型的兄弟元素
+          <ul>
+            <li class="child-type"><strong>:first-of-type</strong>
+              <ul>
+                <li>父元素下相同類型的第一個子元素</li>
+              </ul>
+            </li>
+            <li><strong>:last-of-type</strong>
+              <ul>
+                <li>選取其父元素下相同類型的最後一個子元素</li>
+              </ul>
+            </li>
+            <li class="child-type"><strong>:nth-of-type(n)</strong>
+              <ul>
+                <li>選取其父元素下相同類型的第 n 個子元素</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <h2>偽類-2</h2>
+
+    <div class="table-link">
+      <table>
+        <thead>
+          <tr>
+            <th>屬性值</th>
+            <th>功能</th>
+            <th>專門用於 a 連結標籤</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>:link</td>
+            <td>還未被訪問過的樣式</td>
+            <td>✎</td>
+          </tr>
+          <tr>
+            <td>:visited</td>
+            <td>已被訪問過的樣式</td>
+            <td>✎</td>
+          </tr>
+          <tr>
+            <td>:hover</td>
+            <td>當滑鼠游標停留在元素上時</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>:active</td>
+            <td>當元素被點擊(滑鼠按住)的瞬間</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>:focus</td>
+            <td>當元素(例如文字輸入框)被選中並準備接收使用者輸入時</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <strong>注意！！！</strong>
+    </div>
+
+    <div>
+      <p>為了保護網路安全，必須控制 :link 和 :visted 內的屬性值。只能修改顏色相關，例如
+
+      <ul>
+        <li>color</li>
+        <li>background-color</li>
+        <li>border-color</li>
+      </ul>
+      </p>
+    </div>
+
+    <div class="reason">
+      <em>原因：過去，惡意網站可以透過 CSS 來檢查是否訪問過某些網頁。他們會設定 a:visited 樣式，然後用 JavaScript 檢查連結是否變色。如果變色了，就代表曾經訪問過這個網站，他們就能藉此竊取瀏覽歷史。</em>
+    </div>
+
+    <div class="table-pseudo-elements">
+      <table>
+        <caption>常見偽元素</caption>
+        <thead>
+          <tr>
+            <th>屬性值</th>
+            <th>功能</th>
+            <th>適用範圍</th>
+            <th>必須加上content:"放想增加的內容，若無則一樣需要"</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>::before</td>
+            <td>內容前插入額外的內容或裝飾</td>
+            <td rowspan="3">所有元素</td>
+            <td rowspan="2">ღ</td>
+          </tr>
+          <tr>
+            <td>::after</td>
+            <td>內容後插入額外的內容或裝飾</td>
+          </tr>
+          <tr>
+            <td>::selection</td>
+            <td>反白選取的文字</td>
+          </tr>
+          <tr>
+            <td>::first-line</td>
+            <td>樣式化區塊元素中的第一行文字</td>
+            <td rowspan="2">區塊級元素</td>
+          </tr>
+          <tr>
+            <td>::first-letter</td>
+            <td>樣式化區塊元素中的第一個字母</td>
+          </tr>
+          <tr>
+            <td>::marker</td>
+            <td>列表項目</td>
+            <td>列表項目 li </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="slide">
+      <p><em>♡可以用滑鼠在表格上滑滑看♡</em></p>
+    </div>
+    
+    <hr>
+  
+    <div class="table-cursor">
+      <table>
+        <caption>cursor:搭配</caption>
+        <thead>
+          <tr>
+            <th colspan="2">功能：滑鼠游標在網頁元素上移動時的圖示</th>
+          </tr>
+          <tr>
+            <th>屬性值</th>
+            <th>功能</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>auto</td>
+            <td>讓瀏覽器自動決定游標樣式⋯通常會根據元素內容(例如在文字上變成 I 形，在連結上變成手指)</td>
+          </tr>
+          <tr>
+            <td>default</td>
+            <td>預設的箭頭游標⋯通常用於不具備特殊互動的區域</td>
+          </tr>
+          <tr>
+            <td>pointer</td>
+            <td>一個手指圖示⋯最常用於可點擊的元素，例如按鈕和連結</td>
+          </tr>
+          <tr>
+            <td>text</td>
+            <td>一個 I 形游標⋯通常用於文字輸入框或可選取文字的區域</td>
+          </tr>
+          <tr>
+            <td>help</td>
+            <td>一個帶問號的游標⋯常用於提供說明的圖示或連結上</td>
+          </tr>
+          <tr>
+            <td>wait</td>
+            <td>一個沙漏或旋轉圖示⋯表示程式正在忙碌或正在載入</td>
+          </tr>
+          <tr>
+            <td>move</td>
+            <td>一個十字箭頭游標⋯表示元素可以被移動</td>
+          </tr>
+          <tr>
+            <td>not-allowed</td>
+            <td>一個禁止圖示⋯表示元素無法被點擊或操作，常用於已禁用的按鈕</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <br>
+  
+    <hr>
+  
+    <h2 class="title">互動性常使用+進階應用</h2>
+  
+    <div class="more">
+      <table>
+      <caption>CSS進階選擇</caption>  
+        <thead>
+          <tr>
+            <th>選擇器</th>
+            <th>名稱</th>
+            <th>關係</th>
+            <th>形容</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>空白</td>
+            <td>後代選擇器</td>
+            <td>選擇<strong>所有</strong>後代元素，不論層級</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>></td>
+            <td>子元素選擇器</td>
+            <td>選擇<strong>直接</strong>子元素</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>+</td>
+            <td>相鄰同層級選擇器</td>
+            <td>選擇緊鄰的第一個同層級元素</td>
+            <td>找到這個元素，然後選取它後面緊鄰的那一個兄弟</td>
+          </tr>
+          <tr>
+            <td>~</td>
+            <td>一般同層級選擇器</td>
+            <td>選擇所有後續的同層級元素</td>
+            <td>找到這個元素，然後選取它後面所有的兄弟</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="transition">
+      <table>
+      <caption>transition(過渡)屬性</caption>
+        <thead>
+          <tr>
+            <th>功能：</th>
+            <th colspan="4">控制一個 CSS 屬性從一個狀態平滑地過渡到另一個狀態</th>
+          </tr>
+          <tr>
+            <th>格式：</th>
+            <th>[transition-property]</th>
+            <th>[transition-duration]</th>
+            <th>[transition-timing-function]</th>
+            <th>[transition-delay]</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>意義：</td>
+            <td>哪個 CSS 屬性要進行過渡</td>
+            <td>過渡持續的時間</td>
+            <td>過渡的速度曲線</td>
+            <td>過渡開始前的延遲時間</td>
+          </tr>
+          <tr>
+            <td>搭配：</td>
+            <td>background-color、all...</td>
+            <td>秒 (s) 或毫秒 (ms)</td>
+            <td>
+              <ol>
+                <li>ease：預設值，開始和結束都比較慢</li>
+                <li>linear：速度保持一致</li>
+                <li>ease-in：開始時比較慢</li>
+                <li>ease-out：結束時比較慢</li>
+                <li>ease-in-out：從緩慢啟動、加速到中間最快、再到緩慢結束</li>
+              </ol>
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="transform">
+      <table>
+      <caption>transform 搭配</caption>
+        <thead>
+          <tr>
+            <th colspan="2">功能：對元素進行形狀上的變換，但不會影響到頁面布局</th>
+          </tr>
+          <tr>
+            <th colspan="2">備註：可以放一起，但順序決定發生時間</th>
+          </tr>
+          <tr>
+            <th>屬性值</th>
+            <th>功能</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>translate(數值A, 數值B) 
+              <ul>
+                <li>translateX() 單獨控制水平方向</li>
+                <li>translateY() 單獨控制垂直方向</li>
+              </ul>
+            </td>
+            <td>移動元素的位置</td>
+          </tr>
+          <tr>
+            <td>scale()</td>
+            <td>改變元素的大小(大於1是放大)</td>
+          </tr>
+          <tr>
+            <td>rotate()</td>
+            <td>旋轉元素(單位是度，參見漸變圖片、背景)</td>
+          </tr>
+          <tr>
+            <td>skew()</td>
+            <td>傾斜元素(單位是度)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <br>
+    
+    <h2>position搭配</h2>
+    
+    <div class="position">
+      <ol>
+        <li><strong>static (靜態定位)(所有元素的預設值)</strong>
+          <ul>
+            <li>按照 HTML 程式碼的順序，由上而下、由左而右地顯示</li>
+            <li>top, bottom, left, right 這類定位屬性對它無效</li>
+          </ul>
+        </li>
+        <li><strong>relative (相對定位)</strong>
+          <ul>
+            <li>元素移動後，它原本在頁面上的空間仍然會被保留，這表示它移動後，周圍的元素不會填補它原本留下的空位</li>
+          </ul>
+        </li>
+        <li><strong>absolute (絕對定位)</strong>
+          <ul>
+            <li>會將元素從正常的文檔流中完全移除，這表示它不再佔據任何空間，周圍的元素會像它不存在般重新排列</li>
+            <li>會根據它最近的、<em>已定位的祖先元素</em>來定位</li>
+            <li><em>已定位的祖先元素</em>指的是 position 不為 static 的父、祖父等元素</li>
+            <li>如果找不到任何已定位的祖先元素，元素就會相對於 body 進行定位</li>
+          </ul>
+        </li>
+        <li><strong>fixed (固定定位)</strong>
+          <ul>
+            <li>會將元素從文檔流中移除，就像 absolute</li>
+            <li>元素會永遠相對於瀏覽器視窗進行定位，即使滾動頁面，元素也會固定在同一個位置不動</li>
+          </ul>
+        </li>
+        <li><strong>sticky (黏性定位)</strong>
+          <ul>
+            <li>元素只在特定條件下才會「黏住」，一開始是跟著流動的，只有碰到設定好的「黏著點」時，才會固定不動。</li>
+            <li>必須同時設定一個黏著點</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  
+    </span>
+    
+    <br>
+
+    <div class="top-1">
+      <label>Back to Top</label>
+    </div>
+
+    <hr>
+
+    <div class="second-title" id="start-JavaScript">
+      <h2>JavaScript簡單教學</h2>
+    </div>
+
+    <br>
+
+    <h2>JavaScript基本</h2>
+
+    <div>
+      <ul>
+        <li id="changecolor">變色
+          <br>
+          <br>
+          <button type="button" id="changecolor2">按我，改變小小標題顏色</button>
+        </li>
+        <br>
+        <br>
+        <li>輸出
+          <br>
+          <br>
+          <label for="fakename">匿名：</label>
+          <input type="text" placeholder="請輸入使用者名稱" id="fakename" />
+          <button type="button" id="greet-btn">輸入後，按我，我會打招呼</button>
+          <div id="greeting"></div>
+        </li>
+      </ul>
+    </div>
+
+    <span class="top-1">
+      <label>Back to Top</label>
+    </span>
+
+    <span class="CSS">
+      <button type="button" id="Back-to-CSS">Back to CSS</button>
+    </span>
+  
+    <hr>
+  
+    <div class="second-title">
+      <h2>實驗用</h2>
+    </div>
+  
+    <br>
+    
+    <div>
+      <button class="happy">happy</button>
+    </div>
+  
+  </section>
+
+  <footer>
+    <div>
+      <p>&copy; 2025 My First Work</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

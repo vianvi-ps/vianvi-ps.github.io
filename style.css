@@ -1,0 +1,735 @@
+:root {
+  --title-color: 123, 83, 62;
+  --border-color: 253, 255, 229;
+  --background-color: 193, 174, 141;
+  --link-color: 205, 92, 92;
+  --visited-gray-color: 103, 113, 125;
+  --hover-red-color: 128, 0, 0;
+  --active-green-color: 0, 128, 128;
+  --blue-color: 141, 160, 193;
+  --pink-color: 193, 148, 141;
+  --purple-color: 117, 108, 175;
+}
+
+/*統一設定*/
+
+/*頭、身體、腳統一設定*/
+body {
+  background-color: rgb(var(--background-color));
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+body::selection{
+  background-color: rgba(var(--active-green-color),0.3);
+}
+
+/*頭*/
+
+header {
+  color: rgb(var(--title-color));
+  font-family: "標楷體", sans-serif;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  background-color: rgb(var(--border-color));
+  padding: 3px;
+  transition: all 0.5s 5ms;
+}
+
+header:hover{
+  transform: rotate(180deg);
+}
+
+footer {
+  background-color: rgb(var(--border-color));
+  text-align: center;
+  margin: auto;
+}
+
+/*標題、包含表格標題*/
+
+h2,
+caption {
+  padding: 10px;
+  margin: 10px;
+  font-family: "標楷體", sans-serif;
+  color: rgb(var(--title-color));
+  font-size: 30px;
+}
+
+h2::before {
+  content:"✩ ";
+}
+
+.cool h2{
+  line-height: 1.5;
+  display: inline;
+  background-image: linear-gradient(to top, rgba(var(--blue-color),0.7) 40%, transparent 40%);
+}
+
+.cool h3{
+  color: rgb(var(--title-color));
+  line-height: 1.5;
+  display: inline;
+  margin: 20px;
+  font-family: "標楷體", sans-serif;
+}
+
+.cool h3::before{
+  content: "➤ ";
+}
+
+caption::before {
+  content:"✧ ";
+}
+
+caption{
+  line-height: 1.5;
+  transition: all 0.5s ease-in-out 0.1s;
+  font-weight: bold;
+}
+
+caption:hover{
+  background-image: linear-gradient(to top, rgba(var(--hover-red-color),0.2) 50%, transparent 50%);
+  transform: skew(20deg);
+}
+
+/*水平線+清單符號+按鈕*/
+
+hr {
+  border: 1px solid rgb(var(--title-color));
+}
+
+.hr {
+  border: 1px dashed rgb(var(--title-color));
+}
+
+ul {
+  list-style-type: circle;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 5px 10px;
+  background-color: rgb(var(--blue-color));
+}
+
+button:hover {
+  background-color: rgb(var(--border-color));
+}
+
+/*圖片、影片*/
+
+img,
+iframe {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/*全表格統一*/
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*粗體*/
+
+strong::selection{
+  background-color: rgb(var(--pink-color));
+}
+
+/*統一設定結束*/
+
+/*當裝置改變時*/
+
+@media (max-width: 600px) {
+  .top-button {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*按鈕*/
+
+.top-button {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+.top-button button {
+  color: rgb(var(--title-color));
+  font-size: 25px;
+  font-family: "Times New Roman", sans-serif;
+  border-radius: 20px;
+  padding: 20px;
+  background: rgba(var(--border-color), 0.3);
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+
+.top-button button:hover {
+  background-color: rgb(var(--border-color));
+}
+
+/*HTML-1 未到表格*/
+
+.introduce{
+  color: rgb(var(--purple-color));
+  font-weight: 700;
+}
+
+.introduce::first-letter{
+  font-size: 30px;
+}
+
+.introduce::selection{
+  background-color: rgba(var(--visited-gray-color),0.3);
+}
+
+/*統一設定小標題*/
+
+.second-title h2 {
+  color: rgb(var(--title-color));
+  font-family: "Times New Roman", sans-serif;
+  border: 5px dashed rgb(var(--border-color));
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.second-title h2:hover {
+  transform:scale(1.5);
+  border: 5px solid rgb(var(--border-color));
+  transition: all 300ms ease-in 0s;
+}
+
+/*斜體字+清單符號*/
+
+.basic-html em {
+  text-decoration: none;
+}
+
+.basic-html-2 ol {
+  list-style-type: upper-roman; /*大寫羅馬數字*/
+}
+
+.list-2 ol {
+  list-style-type: lower-roman; /*小寫羅馬數字*/
+}
+
+.text ul,
+.label ul {
+  list-style-type: square;
+}
+
+.text li::marker{
+  color: rgb(var(--purple-color));
+}
+
+.table > li {
+  list-style-type: upper-roman; /*大寫羅馬數字*/
+}
+
+/*HTML-table-time*/
+
+.table-time table{
+  border: 2px solid rgb(var(--border-color));
+}
+
+.table-time th{
+  border-bottom: 2px solid rgb(var(--border-color));
+}
+
+.table-time td:hover {
+  background-color: rgba(var(--border-color), 0.5);
+  cursor: pointer;
+}
+
+/*HTML-important*/
+
+.important {
+  border: 5px dashed rgb(var(--border-color));
+  border-radius: 10px 40px 10px 40px;
+  display: inline-block;
+}
+
+.important li {
+  line-height: 40px;
+  list-style-type: circle;
+  padding-left: 50px;
+  padding-right: 60px;
+}
+
+.important li:hover{
+  transform: scale(1.5);
+  color: rgb(var(--hover-red-color));
+}
+
+/*HTML-label*/
+
+.label ol,
+.flex ol {
+  list-style-type: upper-alpha; /*大寫英文字母*/
+  line-height: 40px;
+}
+
+.label em {
+  color: rgb(var(--hover-red-color));
+}
+
+/*HTML-button*/
+
+.table-button table,
+.table-basic-css table {
+  border: 10px dotted rgb(var(--border-color));
+  border-radius: 20px 10px;
+}
+
+.table-button th,
+.table-button td,
+.table-basic-css th,
+.table-basic-css td {
+  border-bottom: 2px dotted rgba(var(--border-color), 0.5);
+}
+
+/*HTML-input*/
+
+.table-input thead th {
+  background-color: rgba(var(--border-color), 0.3);
+}
+
+.table-input tr:nth-child(even) {
+  background-color: rgba(var(--border-color), 0.3);
+}
+
+/*HTML結束*/
+
+/*CSS*/
+
+.top-1 label,
+.CSS button {
+  color: rgb(var(--purple-color));
+  cursor: pointer;
+  font-size: 20px;
+  background-image: none;
+  background-color: transparent;
+  padding: 10px;
+  font-family: "Times New Roman", sans-serif;
+}
+
+.CSS button:hover {
+  background-color: transparent;
+}
+
+/*CSS表格*/
+
+.table-basic-css {
+  overflow: auto;
+}
+
+.table-percent table {
+  border: 5px dotted rgb(var(--pink-color));
+}
+
+.table-percent ol,
+.px ol {
+  list-style-type: lower-alpha; /*小寫英文字母*/
+}
+
+.table-percent ul,
+.px ul,
+.linear-gradient-2 li {
+  list-style-type: disc;
+}
+
+/*CSS-media*/
+
+.media {
+  overflow: auto;
+}
+
+.media-2 li::marker {
+  color: rgb(var(--hover-red-color));
+}
+
+.media table {
+  border: 5px dashed rgb(var(--pink-color));
+}
+
+/*CSS-color-and-text*/
+
+.table-color-and-text table {
+  border-collapse: collapse;
+  border: none;
+}
+
+.table-color-and-text th,
+.table-color-and-text td {
+  border-bottom: 1px solid rgba(var(--border-color), 0.5);
+  transition: all 60ms 60ms;
+}
+
+.table-color-and-text td:hover{
+  transform: scale(1.2);
+  color: rgb(var(--border-color));
+  background-color: rgb(var(--title-color));
+  border-radius: 10px 20px 10px 30px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+/*CSS-line*/
+
+.table-line table {
+  border: none;
+}
+
+.table-line th,
+.table-line td {
+  border-bottom: 5px double rgba(var(--border-color), 0.5);
+}
+
+/*CSS-background*/
+
+.table-background table {
+  border: 10px dotted rgba(var(--border-color), 0.5);
+}
+
+.table-background tr:nth-child(even) {
+  background-color: rgba(var(--border-color), 0.5);
+}
+
+.table-background thead {
+  background-color: rgba(var(--border-color), 0.5);
+  padding: 10px;
+}
+
+/*CSS-linear-gradient + layout-and-block*/
+
+.table-linear-gradient table {
+  border: 2px solid rgb(var(--purple-color));
+  background-image: linear-gradient(
+    to top right,
+    rgb(var(--purple-color)),
+    white
+  );
+  border-radius: 40px;
+}
+
+.table-layout-and-block tr:first-child th{
+  border-top: 3px solid white;
+}
+
+.table-layout-and-block tr:first-child th:first-child,
+.table-layout-and-block tr:nth-child(even) td:first-child{
+  border-left: 3px solid white;
+}
+
+.table-layout-and-block tr:first-child th:nth-child(2),
+.table-layout-and-block tr:nth-child(odd) td:nth-child(even){
+  border-right: 3px solid white;
+}
+
+.table-layout-and-block tr:last-child td{
+  border-bottom: 3px solid white;
+}
+
+.table-layout-and-block tr:nth-child(odd) td:first-child{
+  border-left: 3px solid rgb(var(--background-color));
+}
+
+.table-layout-and-block tr:nth-child(even) td:last-child{
+  border-right: 3px solid rgb(var(--background-color));
+}
+
+.table-layout-and-block thead,
+.table-layout-and-block tr:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(var(--pink-color), 0.5),
+    rgb(var(--purple-color), 0.5)
+  );
+}
+
+/*CSS-list*/
+
+.table-list table {
+  border: 5px double rgb(var(--border-color));
+  border-radius: 20px;
+}
+
+.table-list th:first-child,
+.table-list td:first-child {
+  width: 200px;
+}
+
+.table-list tr:hover {
+  background-color: rgba(var(--border-color), 0.5);
+  font-weight: 700;
+}
+
+/*CSS-beauty*/
+
+.table-beauty {
+  overflow: auto;
+}
+
+.table-beauty table {
+  border: 5px dashed rgba(var(--border-color), 0.3);
+}
+
+.table-beauty th:nth-child(odd),
+.table-beauty td:nth-child(odd) {
+  background-color: rgba(var(--border-color), 0.3);
+}
+
+.table-beauty tr:first-child th:first-child{
+  border: 2px solid rgb(var(--border-color));
+  background-color: transparent;
+  text-align: center; 
+}
+
+/*CSS-overflow*/
+
+.table-overflow table {
+  border: 1px solid rgb(var(--visited-gray-color));
+}
+
+.table-overflow table thead {
+  background: rgb(var(--visited-gray-color));
+  color: rgb(var(--background-color));
+}
+
+/*CSS-display*/
+
+.table-display table,
+.table-display-2 table {
+  border: 2px solid rgb(var(--pink-color));
+  border-radius: 5px 20px;
+}
+
+.table-display table thead tr:first-child th:nth-child(1) {
+  background-color: rgba(var(--pink-color), 0.3);
+}
+
+/*CSS-flex*/
+
+.table-flex table {
+  border: 1px solid rgb(var(--purple-color));
+  border-radius: 10px;
+}
+
+.table-flex table thead tr:first-child th:nth-child(1) {
+  background-color: rgba(var(--purple-color), 0.3);
+}
+
+/*CSS-child-type + link*/
+
+.child-type {
+  color: rgb(var(--purple-color));
+}
+
+.table-link table {
+  border: none;
+}
+
+.table-link th,
+.table-link td {
+  border-bottom: 2px dashed rgb(var(--border-color));
+}
+
+/*部分表格結束*/
+
+.table-link table tbody tr td:last-child {
+  text-align: center;
+}
+
+.reason em,
+.slide em {
+  text-decoration: underline rgb(var(--border-color));
+}
+
+/*表格*/
+
+.table-pseudo-elements table{
+  border: 2px solid rgb(var(--visited-gray-color));;
+}
+
+.table-pseudo-elements tr:first-child td:nth-child(3),  /*第一列的第三個 */
+.table-pseudo-elements tr:nth-child(3) td:first-child,  /*第三列的第一個 */
+.table-pseudo-elements tr:nth-child(3) td:nth-child(2), /*第三列的第二個 */
+.table-pseudo-elements tr:nth-child(4) td:nth-child(3),
+.table-pseudo-elements tr:nth-child(5) td:first-child,
+.table-pseudo-elements tr:nth-child(5) td:nth-child(2),
+.table-pseudo-elements tr:first-child th{
+  border-bottom: 2px solid rgb(var(--visited-gray-color));
+}
+
+.table-pseudo-elements tr:first-child td:last-child {
+  text-align: center;
+  background-color: rgba(var(--purple-color), 0.3);
+  border-bottom: 2px solid rgb(var(--visited-gray-color));
+}
+
+.table-pseudo-elements table td:nth-child(3) {
+  background-color: rgb(var(--pink-color));
+}
+
+.table-pseudo-elements table tr:first-child td:nth-child(3):hover,
+.table-pseudo-elements tr:nth-child(4) td:nth-child(3):hover,
+.table-pseudo-elements tr:nth-child(6) td:nth-child(3):hover{
+  transform: scale(1.3);
+  border-radius: 10px;
+}
+
+/*滑鼠游標*/
+
+.table-cursor table {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to left, rgb(var(--pink-color)), white);
+}
+
+.table-cursor table tr:nth-child(2) td{
+  cursor: default;
+}
+
+.table-cursor table tr:nth-child(3) td{
+  cursor: pointer;
+}
+
+.table-cursor table tr:nth-child(5) td{
+  cursor: help;
+}
+
+.table-cursor table tr:nth-child(6) td{
+  cursor: wait;
+}
+
+.table-cursor table tr:nth-child(7) td{
+  cursor: move;
+}
+
+.table-cursor table tr:nth-child(8) td{
+  cursor: not-allowed;
+}
+
+/*互動性常使用*/
+
+.title{
+  line-height: 1.5;
+  display: inline;
+  background-image: linear-gradient(to top, rgba(var(--blue-color),0.7) 40%, transparent 40%);
+}
+
+/*more*/
+
+.more table{
+  border-top: 2px dotted rgb(var(--border-color)); 
+  border-bottom: 2px dotted rgb(var(--border-color)); 
+}
+
+.more th{
+  background-color: rgba(var(--border-color),0.3); 
+  border-bottom: 2px dotted rgb(var(--border-color)); 
+}
+
+/*transition*/
+
+.transition{
+  overflow: auto;
+}
+
+.transition table{
+  border-right: 2px dotted rgb(var(--border-color));
+  border-left: 2px dotted rgb(var(--border-color));
+}
+
+.transition tr:first-child th:first-child,
+.transition tr:nth-child(2) th:first-child,
+.transition tr:first-child  td:first-child,
+.transition tr:nth-child(2) td:first-child{
+  background-color: rgba(var(--border-color),0.3); 
+  border-right: 2px dotted rgb(var(--border-color)); 
+}
+
+/*transform*/
+
+.transform table{
+  background: linear-gradient(45deg, rgba(var(--purple-color),0.8), white);
+  border-radius: 10px;
+}
+
+.transform table tr:first-child th:first-child,
+.transform table tr:nth-child(2) th:first-child{
+  color:rgb(var(--purple-color));
+}
+/*position*/
+
+.position ul{
+  margin-bottom: 20px;
+}
+
+.position em{
+  color: rgb(var(--hover-red-color));
+}
+
+
+/*實驗用*/
+
+.happy  {
+  color: rgb(var(--title-color));
+  font-size: 25px;
+  font-family: "Times New Roman", sans-serif;
+  border-radius: 50%;
+  padding: 20px;
+  background: rgb(var(--border-color));
+  margin: 5px;
+  transition: all 0.5s ease-in;
+}
+
+.happy:hover {
+  background-color: rgb(var(--pink-color));
+  transform: scale(1.5);
+  transform: translate(50px, 10px);
+}
+
+/*連結*/
+
+a:link {
+  color: rgb(var(--link-color));
+  background-color: transparent;
+}
+
+a:visited {
+  color: rgb(var(--visited-gray-color));
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgb(var(--hover-red-color));
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(var(--active-green-color));
+  text-decoration: none;
+}
